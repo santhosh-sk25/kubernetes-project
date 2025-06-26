@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: sloopstash-${ENVIRONMENT}-crm-nginx-log
+  name: sloopstash-${ENVIRONMENT}-crm-redis-log
 spec:
-  storageClassName: sloopstash-${ENVIRONMENT}-crm-nginx-log
-  volumeName: sloopstash-${ENVIRONMENT}-crm-nginx-0-log
+  storageClassName: sloopstash-${ENVIRONMENT}-crm-redis-log
+  volumeName: sloopstash-${ENVIRONMENT}-crm-redis-0-log
   volumeMode: Filesystem
   accessModes:
     - ReadWriteOnce
@@ -15,10 +15,10 @@ spec:
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: sloopstash-${ENVIRONMENT}-crm-nginx-data
+  name: sloopstash-${ENVIRONMENT}-crm-redis-data
 spec:
-  storageClassName: sloopstash-${ENVIRONMENT}-crm-nginx-data
-  volumeName: sloopstash-${ENVIRONMENT}-crm-nginx-0-data
+  storageClassName: sloopstash-${ENVIRONMENT}-crm-redis-data
+  volumeName: sloopstash-${ENVIRONMENT}-crm-redis-0-data
   volumeMode: Filesystem
   accessModes:
     - ReadWriteOnce
